@@ -2,8 +2,11 @@
   "BASE_URL": "http://localhost:5000/",
   "UPLOAD_FOLDER": "uploads",
   "AWS_ACCESS_KEY_ID":"AKIA2MDGBKGCTMWWYHPQ",
+  "AWS_REGION":"us-east-1",
   "AWS_ACCESS_KEY_SECRET":"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",
   "S3_BUCKET_NAME":"krishnag0902",
+  "S3_UPLOAD_LIMIT": 20,
+  "S3_USE_THREADS": true,
   "PERIOD": 60,
   "LIMIT": 9600
 
