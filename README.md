@@ -1,6 +1,6 @@
 # Project Name
 
-This is a project in response to  Bowery farms take home assessment for backend engineer role.
+This is a project is to implement a image uploader with rate limiter.
 ## Table of Contents
 
 - [Project Name](#project-name)
