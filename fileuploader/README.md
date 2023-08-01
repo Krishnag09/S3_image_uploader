@@ -36,6 +36,7 @@ pip install -r requirements.txt
 flask --app fileuploader run --debug
 ```
 
+Might might need reactivating after installing requirements.txt.
 You can replace the AWS credentials in config.json but it should work as is. 
 The S3 upload limit can also be set by the same.
 
@@ -44,3 +45,4 @@ The S3 upload limit can also be set by the same.
 
 - Use postman with POST as method,  "http://127.0.0.1:5000/api/upload" as url ,  form-data as body.
 - Select file as key type, upload image test.png or any image of you choice.
+- To run tests use  `python3 -m unittest fileuploader/tests/test_upload.py`
