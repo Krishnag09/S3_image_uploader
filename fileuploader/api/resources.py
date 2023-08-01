@@ -4,6 +4,7 @@ from werkzeug.utils import secure_filename
 import os
 import random
 import boto3
+from flask import Flask
 
 from fileuploader.api.helpers import Helpers
 from fileuploader.config import Config
@@ -12,6 +13,8 @@ from fileuploader.config import Config
 s3_client = boto3.client('s3',
                          aws_access_key_id=Config.AWS_ACCESS_KEY_ID,
                          aws_secret_access_key=Config.AWS_ACCESS_KEY_SECRET)
+
+app = Flask(__name__)
 
 class HelloWorld(Resource):
     def get(self):
